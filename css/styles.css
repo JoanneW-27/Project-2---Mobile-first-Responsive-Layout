@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  border: 1px solid blue;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid pink;
+  }
+
+a {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid red;
+  margin: auto;
+  text-align: center;
+}
