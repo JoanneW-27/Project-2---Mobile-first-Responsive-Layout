@@ -1,88 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    <link rel="stylesheet" href="css/styles.css"> 
+  </style>
+  <link rel="stylesheet" href="css/styles.css"> 
 </head>
 <body>
-  <header id="top"> 
-    <div class="desktop">
-    <h1>Student Name</h1>
-    <nav>
-      <a href="#top">HOME</a>
-      <a href="#portfolio">PORTFOLIO</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
+  <header id="top"> <!--I've used the word "top" as the id as this is where the home button will take you to-->
+    <div class="desktop"> <!--This class is set so I can change the layout for desktop screen size in css-->
+      <h1>Student Name</h1>
+      <nav>
+        <a href="#top">HOME</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#hobbies">HOBBIES</a> <!--This is a new section I added for the "exceeds" rating-->
+      </nav>
     </div>
-    <div class="container">
-     <img class="profile" src="images/responsive-layout-profile.png" alt="light grey square with a yellow circle and illistation of a face">
-     <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-     </div>
+    <div class="container"> <!--This class is set so I can change how the top of the website looks with a different layout for each screen size-->
+      <img class="profile" src="images/responsive-layout-profile.png" alt="light grey square with a yellow circle and illistation of a face"> <!--I used the name profile to represent the profile image-->
+      <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p> <!--I used intro as its a introduction paragraph-->
+    </div>
   </header>
 
-  <div id="portfolio">
+  <div id="portfolio"> <!--This allows me to edit the main section of the site for different screen sizes. I've used the word "portfolio" as the id as this is where the portfolio button will take you to-->
     <h2>PORTFOLIO</h2>
-      <div class="boxes">
-        <div class="box1">
-          <img class="image1" src="images/portfolio-1.png" alt="blue background with a computer window center">
-          <h3>Marketing Page</h3>
-          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-        </div>
-
-        <div class="box2">
-          <img class="image2" src="images/portfolio-2.png" alt="yellow background with a computer window center with a bar chart">
-          <h3>Search Page</h3>
-          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-        </div>
-
-        <div class="box3">
-          <img class="image3" src="images/portfolio-3.png" alt="dark blue background with a computer window center with horizantal boxes">
-          <h3>Travel App</h3>
-          <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        </div>
-
-        <div class="box4">
-          <img class="image4" src="images/portfolio-4.png" alt="teal background with a computer window center with a map">
-          <h3>Map of Favorite Spots</h3>
-          <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-        </div>
-
-        <div class="box5">
-          <img class="image5" src="images/portfolio-5.png" alt="purple background with a computer window center muliple squares">
-          <h3>Photo Gallery</h3>
-          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-        </div>
-
-        <div class="box6">
-          <img class="image6" src="images/portfolio-6.png" alt="grey background with a computer window center with three horizantal boxes">
-          <h3>Calculator</h3>
-          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-        </div>
+    <div class="boxes"> <!--This class is set so I can edit all the boxes and text together to adjust how they appear on different screen sizes-->
+      <div class="box1"> <!--This class is set so I can control how one box and the text underneath only is displayed, using numbers in the name to help keep it all organised-->
+        <img class="image1" src="images/portfolio-1.png" alt="blue background with a computer window center"> <!--Adding a class to the images helps me adjust their layout individually without altering the box it's in-->
+        <h3>Marketing Page</h3>
+        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
       </div>
-  </div>
-    <div id="contact">
-      <h2>CONTACT</h2>
-      <p class="end1">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-      <p class="end2">Phone <strong>+1 (111) 555-1234</strong></p>
-      <p class="end3">Email <strong>email@yoursite.com</strong></p>
-      <div class="line"></div>
+
+      <div class="box2">
+        <img class="image2" src="images/portfolio-2.png" alt="yellow background with a computer window center with a bar chart">
+        <h3>Search Page</h3>
+        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+      </div>
+
+      <div class="box3">
+        <img class="image3" src="images/portfolio-3.png" alt="dark blue background with a computer window center with horizantal boxes">
+        <h3>Travel App</h3>
+        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+      </div>
+
+      <div class="box4">
+        <img class="image4" src="images/portfolio-4.png" alt="teal background with a computer window center with a map">
+        <h3>Map of Favorite Spots</h3>
+        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+      </div>
+
+      <div class="box5">
+        <img class="image5" src="images/portfolio-5.png" alt="purple background with a computer window center muliple squares">
+        <h3>Photo Gallery</h3>
+        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      </div>
+
+      <div class="box6">
+        <img class="image6" src="images/portfolio-6.png" alt="grey background with a computer window center with three horizantal boxes">
+        <h3>Calculator</h3>
+        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+      </div>
     </div>
+  </div>
 
-
-    <footer>
-      <div class="last">
-        <h3 class="student"><strong>Student name</strong></h3>
-        <a class="last-button" href="#top"><strong>Back to Top</strong></a>
-        <a class="last-home" href="#top">HOME</a>
-        <a class="last-portfolio" href="#portfolio">PORTFOLIO</a>
-        <a class="last-contact" href="#contact">CONTACT</a>
+      <div id="hobbies"> <!--This is a new section I've added to match "exceeds" rating. I've used the word "hobbies" as the id as this is where the hobbies button will take you to-->
+         <h3>HOBBIES</h3>
+        <img class="crochet" src="images/crochet-top.jpg" alt="part of a pink and white crocheted top">  
+        <p class="hobbies-para">In my spare time I love to go hiking, traveling and playing football. I also enjoy crocheting and anything creative!</p>
       </div>
-    </footer>
+
+      <div id="contact"> <!--I've used the word "contact" as the id as this is where the contact button will take you to-->
+        <h2>CONTACT</h2>
+        <p class="end1">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p> <!--I've used 3 separate classes for the end sentences as they need separate css rules for the layout-->
+        <p class="end2">Phone <strong>+1 (111) 555-1234</strong></p> 
+        <p class="end3">Email <strong>email@yoursite.com</strong></p>
+        <div class="line"></div> <!--This is to separate the footer at bottom of the page-->
+      </div>
+
+
+  <footer>
+    <div class="last"> <!--I've used separate classes inside the footer to have more flexibility on how this section appears with css, also allowing me to make the "back to top" button disappear on bigger screen sizes-->
+      <h3 class="last-student"><strong>Student name</strong></h3> <!--I've used the word "last" for all these classes to help organise, these all appear last on the screen-->
+      <a class="last-button" href="#top"><strong>Back to Top</strong></a>
+      <a class="last-home" href="#top">HOME</a>
+      <a class="last-portfolio" href="#portfolio">PORTFOLIO</a>
+      <a class="last-contact" href="#contact">CONTACT</a>
+      <a class="last-hobbies" href="#hobbies">HOBBIES</a>
+    </div>
+  </footer>
 
 </body>
 </html>

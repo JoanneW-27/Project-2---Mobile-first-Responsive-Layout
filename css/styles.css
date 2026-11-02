@@ -4,21 +4,32 @@
   text-align: center;
 }
 
-body {
+body { /*This is for mobile view with the mobile-first approach*/
   margin: 0 auto;
+  width: 100%;
   max-width: 100%;
   background-color: #F5F5F5;
 }
 
 header {
-  padding: 0 0 20px 0;
+  padding: 0 0 20px;
   border: 0;
   margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 25px;
+  margin: 5px;
 }
 
 nav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border: 0;
   margin: 5px;
 }
@@ -30,47 +41,29 @@ a {
   margin: 4px 8px;
   padding: 16px;
   background-color: white;
+  color: black;
 }
 
-a:visited {
- color: black;
- text-decoration: none;
+a:hover { 
+  color: rgb(216, 108, 126);
+}
+
+.container {
+  height: 50%;
+}
+
+.profile {
+  padding: 45px 50px 10px;
+}
+
+.intro {
+  color: #4A4A4A;
+  margin: 10px;
 }
 
 #portfolio {
   background-color: white;
-  padding: 20px 8px 30px 8px;
-}
-
-#contact {
-  padding: 20px 5px 2px 5px;
-  margin: 15px 5px 2px 5px; 
-}
-
-.end1, .end2, .end3 {
-  color:#4A4A4A;
-  padding: 15px;
-}
-
-img {
-  display: inline-block;
-  width: 80%;
-  max-width: 90%;
-  height: auto;
-  padding: 15px;
-  margin: 0;
-}
-
-.profile {
-  padding: 20px 40px 10px;
-  max-width: 80%;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 30px;
-  padding: 25px;
-  margin: 5px;
+  padding: 20px 8px 30px;
 }
 
 h2 {
@@ -91,24 +84,59 @@ p {
   color: black;
   font-weight: 400;
   font-size: 16px;
-  padding: 10px 5px 25px 5px;
+  padding: 5px 15px 25px;
   margin: 5px;
 }
 
-.intro {
-  color: #4A4A4A;
-  margin: 10px;
+img {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 0;
+}
+
+#hobbies {
+  color: rgb(216, 108, 126);
+  background-color: white;
+  padding: 10px 0; 
+  margin: 10px 0;
+}
+
+.crochet {
+  padding: 20px 40px 5px;
+}
+
+.hobbies-para {
+  color: rgb(216, 108, 126);
+} 
+
+#contact {
+  padding: 20px 5px 2px;
+  margin: 15px 5px 2px; 
+}
+
+.line {
+  border: 1px solid #EBEBEB;
+  width: 100%;
+  margin: 30px 0 5px;
+}
+
+.end1, .end2, .end3 {
+  color:#4A4A4A;
+  padding: 10px;
 }
 
 .last {
   display: flex;
   justify-content: space-between;
-  padding: 2px 5px 10px 5px;
+  padding: 2px 5px 10px;
   margin: 5px;
   align-items: center;
 }
 
-.student {
+.last-student {
   font-size: 16px;
   font-weight: 400;
 }
@@ -118,24 +146,18 @@ p {
   font-weight: 400;
 }
 
-.last-home, .last-portfolio, .last-contact {
+.last-home, .last-portfolio, .last-contact, .last-hobbies {
   display: none;
 }
 
-.line {
-  border: 1px solid #EBEBEB;
-  width: 100%;
-  margin: 30px 0 5px 0;
-}
 
-@media (min-width:768px) {
+@media (min-width:768px) {  /*This is for tablet view*/
   h1{
-    padding: 50px 15px 10px 15px;
+    padding: 50px 15px 10px;
   }
   
   nav {
     flex-direction: row;
-    justify-content: center;
   }
 
   a {
@@ -145,30 +167,29 @@ p {
   .container {
     display: flex;
     flex-direction: row;
-    height: 270px;
     justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .intro {
-    order: 1;
-    text-align: start;
-    padding: 35px 5px 10px 20px;
-    font-size: 20px;
-    margin: 2px;
+    padding: 0 0 30px;
   }
 
   .profile {
     order: 2;
     padding: 35px 20px 10px 5px;
     width: 40%;
-    max-width: 80%;
     margin: 2px;
+  }
+
+  .intro {
+    order: 1;
+    text-align: start;
+    padding: 35px 5px 10px 20px;
+    margin: 2px;
+    font-size: 20px;
   }
 
   #portfolio {
     padding: 5px 25px;
-    margin: 2px;
+    margin: 0;
   }
 
   .boxes {
@@ -181,29 +202,50 @@ p {
 
   .box1, .box2, .box3, .box4, .box5, .box6 {
     width: 50%;
-    padding: 5px 0px 30px 0px;
+    padding: 5px 0px 30px;
     margin: 0px;
+    height: auto;
   }
 
   .image1, .image2, .image3, .image4, .image5, .image6 {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     padding: 5px;
   }
 
-  p {
-    padding: 5px 25px 25px;
+  h3 {
+    padding: 15px 20px 5px;
   }
 
-  h3 {
-    padding: 15px 20px 5px 20px;
+  p {
+    padding: 5px 20px 25px;
+  }
+
+  #hobbies {
+    display: flex;
+    padding: 5px 25px 30px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hobbies-para {
+    padding: 10px 200px;
+    font-size: 18px;
+  }
+
+  .crochet {
+    width: 50%;
+    max-width: 70%;
+    align-self: center;
   }
 
   .end1, .end2, .end3 {
-     font-size: 18px;
+    font-size: 18px;
   }
 
   .end1 {
-    padding: 10px 80px 25px 80px;
+    padding: 10px 80px 25px;
     margin: 10px;
   }
 
@@ -213,15 +255,19 @@ p {
   }
 
   .end3 {
-    padding: 10px 80px 30px 80px;
+    padding: 10px 80px 30px;
     margin: 2px;
+  }
+
+  .last {
+    padding: 0px 2px 40px;
   }
 
   .last-button {
     display: none;
   }
 
-  .last-home, .last-portfolio, .last-contact {
+  .last-home, .last-portfolio, .last-contact, .last-hobbies {
     display: flex;
   }
 
@@ -229,49 +275,37 @@ p {
     margin-left: auto;
   }
 
-  .last {
-    padding: 0px 2px 40px 2px;
-  }
 }
 
-@media (min-width:1024px) {
-
-  header {
-    padding: 10px 2px;
-    width: 100%;
-  }
-
-  #portfolio {
-  padding: 2px;
-  }
+@media (min-width:1024px) { /*This is for desktop view*/
 
   body {
     padding: 30px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
   }
 
+  header {
+    padding: 10px 2px;
+  }
+  
   .desktop, .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
     width: 100%;
     max-width: 90%;
   }
 
-  .container {
-    align-items: flex-start; 
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #portfolio {
+    padding: 2px;
   }
 
   h1, .intro, a, .profile {
     padding: 10px;
     margin: 10px;
-  }
-
-  .intro{
-    font-size: 18px;
   }
 
   h1 {
@@ -283,7 +317,15 @@ p {
     width: auto;
     height: auto;
   }
+
+  .intro{
+    font-size: 18px;
+  }
   
+  p {
+    padding: 5px 8px 25px;
+  }
+
   .boxes {
     justify-content: space-evenly;
     padding: 5px 10px;
@@ -293,19 +335,21 @@ p {
     width: 32%;
   }
 
-   .image1, .image2, .image3, .image4, .image5, .image6 {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  .image1, .image2, .image3, .image4, .image5, .image6 {
     padding: 2px;
   }
 
+  .crochet {
+    width: 35%;
+    max-width: 35%;
+  }
+
   .end1 {
-    padding: 10px 200px 25px 200px;
+    padding: 10px 180px 25px;
   }
 
   .last {
-    padding: 0px 2px 20px 2px;
+    padding: 0px 2px 10px;
   }
 
 }
