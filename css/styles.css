@@ -1,20 +1,20 @@
 * {
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
-  text-align: center;
+  padding: 0;
+  border: 0;
+  margin: 0; 
 }
 
 body { /*This is for mobile view with the mobile-first approach*/
-  margin: 0 auto;
   width: 100%;
   max-width: 100%;
   background-color: #F5F5F5;
+  text-align: center;
 }
 
 header {
   padding: 0 0 20px;
-  border: 0;
-  margin: 0;
   width: 100%;
   max-width: 100%;
 }
@@ -30,7 +30,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 0;
   margin: 5px;
 }
 
@@ -94,7 +93,6 @@ img {
   max-width: 100%;
   height: auto;
   padding: 10px;
-  margin: 0;
 }
 
 #hobbies {
@@ -136,14 +134,10 @@ img {
   align-items: center;
 }
 
-.last-student {
+.last-student, .last-button {
   font-size: 16px;
   font-weight: 400;
-}
-
-.last-button {
   background-color: #F5F5F5;
-  font-weight: 400;
 }
 
 .last-home, .last-portfolio, .last-contact, .last-hobbies {
@@ -152,6 +146,7 @@ img {
 
 
 @media (min-width:768px) {  /*This is for tablet view*/
+  
   h1{
     padding: 50px 15px 10px;
   }
@@ -189,7 +184,6 @@ img {
 
   #portfolio {
     padding: 5px 25px;
-    margin: 0;
   }
 
   .boxes {
@@ -197,20 +191,15 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    padding: 0;
   }
 
   .box1, .box2, .box3, .box4, .box5, .box6 {
     width: 50%;
     padding: 5px 0px 30px;
-    margin: 0px;
     height: auto;
   }
 
   .image1, .image2, .image3, .image4, .image5, .image6 {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
     padding: 5px;
   }
 
@@ -241,11 +230,11 @@ img {
   }
 
   .end1, .end2, .end3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .end1 {
-    padding: 10px 80px 25px;
+    padding: 10px 65px 25px;
     margin: 10px;
   }
 
@@ -267,6 +256,10 @@ img {
     display: none;
   }
 
+  .last-student {
+    padding: 16px;
+  }
+
   .last-home, .last-portfolio, .last-contact, .last-hobbies {
     display: flex;
   }
@@ -281,6 +274,7 @@ img {
 
   body {
     padding: 30px;
+    margin: 0 auto;
   }
 
   header {
@@ -300,7 +294,7 @@ img {
   }
 
   #portfolio {
-    padding: 2px;
+    padding: 15px 2px 2px;
   }
 
   h1, .intro, a, .profile {
@@ -313,9 +307,7 @@ img {
   }
 
   .profile {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    width: 45%;
   }
 
   .intro{
@@ -345,7 +337,8 @@ img {
   }
 
   .end1 {
-    padding: 10px 180px 25px;
+    padding: 5px 165px 25px;
+    margin: 5px 10px 10px;
   }
 
   .last {
